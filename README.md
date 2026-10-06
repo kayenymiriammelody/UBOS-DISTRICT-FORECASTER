@@ -14,10 +14,10 @@ This mini project is one that aims to develop a model that forecasts 5-year popu
 - Using bootstrap resampling of residuals, 95% predictions were added to the forecasts and plotted.
 
 ### FINDINGS, RECOMMENDATIONS AND LIMITATIONS
-•	Variance calculated using the statistics module was significantly higher than that calculated using NumPy as shown below;
+- Variance calculated using the statistics module was significantly higher than that calculated using NumPy as shown below;
 The statistics module; Kampala , Wakiso, Gulu, Luweero, Jinja  (4.260111e+04 , 6.006667e+04 ,2.885833e+03,      3.031966e+06  ,4.075507e+06) and with  NumPy (  38341.00 , 54060.00 , 2597.25 ,2728769.00 ,3667956.00). The difference is in  the fact that NumPy calculates population variance while the Statistics module calculates the sample variance. Setting the Delta degrees of freedom(ddof) to 1 eliminates the bias in variation associated with the sample letting the variance in the NumPy and Statistics modules be the same.
-•	The Compound Annual Growth Rate(CAGR) of the individual districts indicated the Jinja had the highest rate of 18.9% which is probably because the population estimates were made up. The year on year growth rates had fluctuations. The CAGR of other districts were as follows, Kampala (4.6%), Wakiso(6.5%), Gulu(4.6%) and Luweero(4.6%).
-•	The linear trend, exponential/CAGR growth and Fibonacci- ratio models were trained using 2015-2021 data and tested using 3033-2024 data. The best models per district with the MAE,RMSE AND MAPE values are as follows;
+- The Compound Annual Growth Rate(CAGR) of the individual districts indicated the Jinja had the highest rate of 18.9% which is probably because the population estimates were made up. The year on year growth rates had fluctuations. The CAGR of other districts were as follows, Kampala (4.6%), Wakiso(6.5%), Gulu(4.6%) and Luweero(4.6%).
+- The linear trend, exponential/CAGR growth and Fibonacci- ratio models were trained using 2015-2021 data and tested using 3033-2024 data. The best models per district with the MAE,RMSE AND MAPE values are as follows;
 1. 	Kampala, CAGR( 9.62,10.39,0.55%)
 2. 	Wakiso, CAGR(6.80, 8.05, 0.42%)
 3. 	Gulu , CAGR( 9.44, 10.87, 2.02%)
