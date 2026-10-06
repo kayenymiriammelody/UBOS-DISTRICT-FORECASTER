@@ -1,17 +1,17 @@
 # UBOS-DISTRICT-FORECASTER
 This mini project is one that aims to develop a model that forecasts 5-year population estimates that will aid a district in planning for the required number of classrooms for the students. The available data has 10 year population estimates (2015 to 2024) for  5 districts.districts. This project was edited with the aid of CODEX, an Artificial Intelligence powered tool.
 ### IMPLEMENTATION
-•	Using object oriented programming in python, a class having years and populations as NumPy arrays was created.
-•	Using the statistics module and NumPy,  the mean, median, variance and standard deviation were calculated per district. 
-•	Year-on-year growth rates per district and Compound Annual Growth Rate (CAGR) were computed to find out what district was growing fastest.
-•	Three forecasting models; linear trend, Fibonacci-ratio model and exponential/CAGR growth were implemented to identify the best model.
-•	The models were trained and tested using Mean Absolute Error (MAE), Mean Absolute Percentage Error(MAPE) and Root Mean Squared Error(RMSE).
+- Using object oriented programming in python, a class having years and populations as NumPy arrays was created.
+- Using the statistics module and NumPy,  the mean, median, variance and standard deviation were calculated per district. 
+- Year-on-year growth rates per district and Compound Annual Growth Rate (CAGR) were computed to find out what district was growing fastest.
+- Three forecasting models; linear trend, Fibonacci-ratio model and exponential/CAGR growth were implemented to identify the best model.
+- The models were trained and tested using Mean Absolute Error (MAE), Mean Absolute Percentage Error(MAPE) and Root Mean Squared Error(RMSE).
  
-•	Actual, fitted and forecast values per district were plotted.
+- Actual, fitted and forecast values per district were plotted.
 
-•	An 18%  of primary school children and 53 per class assumption was used to estimated the number of classes needed in 2029.
+- An 18%  of primary school children and 53 per class assumption was used to estimated the number of classes needed in 2029.
 
-•	Using bootstrap resampling of residuals, 95% predictions were added to the forecasts and plotted.
+- Using bootstrap resampling of residuals, 95% predictions were added to the forecasts and plotted.
 
 ### FINDINGS, RECOMMENDATIONS AND LIMITATIONS
 •	Variance calculated using the statistics module was significantly higher than that calculated using NumPy as shown below;
