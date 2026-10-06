@@ -12,7 +12,7 @@ This mini project is one that aims to develop a model that forecasts 5-year popu
 - An 18%  of primary school children and 53 per class assumption was used to estimated the number of classes needed in 2029.
 
 - Using bootstrap resampling of residuals, 95% predictions were added to the forecasts and plotted.
-
+- Illustrated the findings
 ### FINDINGS, RECOMMENDATIONS AND LIMITATIONS
 - Variance calculated using the statistics module was significantly higher than that calculated using NumPy as shown below;
 The statistics module; Kampala , Wakiso, Gulu, Luweero, Jinja  (4.260111e+04 , 6.006667e+04 ,2.885833e+03,      3.031966e+06  ,4.075507e+06) and with  NumPy (  38341.00 , 54060.00 , 2597.25 ,2728769.00 ,3667956.00). The difference is in  the fact that NumPy calculates population variance while the Statistics module calculates the sample variance. Setting the Delta degrees of freedom(ddof) to 1 eliminates the bias in variation associated with the sample letting the variance in the NumPy and Statistics modules be the same.
